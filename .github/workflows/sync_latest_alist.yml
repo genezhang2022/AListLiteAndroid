@@ -26,7 +26,7 @@ jobs:
           echo "LATEST_ALIST_VERSION: " ${LATEST_ALIST_VERSION}
           if [ "$LATEST_ALIST_VERSION" \> "$CURRENT_ALIST_VERSION" ]; then
               echo "AList Need to Be Updated!"
-              gh workflow run release.yaml -R LeoHaoVIP/AListLiteAndroid
+              gh workflow run release.yml -R genezhang2022/AListLiteAndroid
           else
               echo "No Need to Update."
           fi
