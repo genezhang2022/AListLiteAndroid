@@ -16,6 +16,9 @@ jobs:
     steps:
       - name: checkout_code
         uses: actions/checkout@v3
+        env:
+
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
         
       - name: check_alist_has_new_version
         run: |
